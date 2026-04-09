@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Consumo de Água</title>
+  </head>
+  <body>
+    <h1>Consultei o seu consumo de água</h1>
+    <div class="container">
+      <h2>Consumo de Água</h2>
+      <label>Quem você é?</label>
+      <select id="selecao">
+        <option value="" disabled selected>Escolher pessoa</option>
+      </select>
+      <div class="dates">
+        <div class="date-group">
+          <label>Data de início</label>
+          <input id="data-inicio" type="date" />
+        </div>
+
+        <div class="date-group">
+          <label>Data de fim</label>
+          <input id="data-fim" type="date" />
+        </div>
+      </div>
+
+      <button id="calcular-btn">Resultado</button>
+
+      <p id="resultado" class="oculto">
+        Resultado: Nesses X dias você obteve a marca de Y pontos
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
